@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Help Santa!</title>
+</head>
+<body class="letter-bg" onload="playAud()">
+    <script>
+        const flipLetter = () => {
+            let backInfo = document.querySelector(".back-info");
+            let frontInfo = document.querySelector(".front-info");
+            if (backInfo.classList.contains("hide")) {
+                frontInfo.classList.add("hide");
+                backInfo.classList.remove("hide");
+            } else {
+                backInfo.classList.add("hide");
+                frontInfo.classList.remove("hide");
+            }
+        };
+    </script>
+    <div class="letter-container">
+        <div class="fold-cover"></div>
+        <div class="letter-fold" onclick="flipLetter()"></div>
+        <div class="front-info">
+            <h3><span class="letter-urgent">URGENT:</span> My Husband is Missing!</h3>
+            <p>Santa's been on a puzzle kick, and thought it a good idea to make some puzzles of his own. The clue on the back is some jibberish he scribbled down. Good luck, and apologies on behalf of my husband.</p>
+            <span class="letter-from">Sincerely,</span>
+            <h3 class="signature">Mrs. Clause</h3>
+        </div>
+        <div class="back-info hide">
+            <h3>Yum.</h3>
+            <p>Head to where you keep the things, whose aroma is sure to please. They're sometimes gathered from animal poop, in the warm summer breeze.</p>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

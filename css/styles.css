@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Quattrocento+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --xmas-blue: rgb(26, 35, 53);
+    --xmas-green: rgb(16, 44, 28);
+    --xmas-gold: rgb(136, 117, 10);
+    --xmas-red: rgb(148, 12, 12);
+    --xmas-pink: rgb(248, 215, 221);
+}
+
+body {
+    background-color: var(--xmas-green);
+}
+
+/* ************* GLOBAL STYLES ***************** */
+h3 {
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+p {
+    font-family: 'Quattrocento', sans-serif;
+}
+
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+/* ***************** ENVELOPE STYLES ****************** */
+
+.envelope-container {
+    width: 900px;
+    height: 400px;
+    margin: 10% auto;
+    background-color: white;
+    border: 5px solid var(--xmas-gold);
+}
+
+.envelope-fold {
+    display: inline-block;
+    width: 439px;
+    height: 20px;
+    border-bottom: 3px solid black;
+    margin-top: 93px;
+    margin-left: 2.5px;
+    z-index: -1;
+    opacity: 0.7 !important;
+}
+
+.left-fold {
+    transform: rotate(25deg);
+}
+
+.right-fold {
+    transform: rotate(335deg);
+}
+
+.seal, .seal h3 {
+    position: relative;
+    z-index: 10;
+}
+
+.seal {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--xmas-red);
+    border: 5px solid var(--xmas-green);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.seal h3 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 22px;
+    opacity: 1;
+}
+
+.shadow {
+    box-shadow: 1px 20px 25px rgb(22, 22, 22);
+    animation-name: shadowAppear;
+    animation-duration: 1s;
+}
+
+@keyframes shadowAppear {
+    from {
+        box-shadow: none;
+    } to {
+        box-shadow: 1px 20px 25px rgb(22, 22, 22);
+    }
+}
+
+.fold-shadow {
+    box-shadow: 1px 10px 5px rgb(22, 22, 22);
+    animation-name: foldShadowAppear;
+    animation-duration: 1.9s;
+    opacity: 0.5;
+}
+
+@keyframes foldShadowAppear {
+    from {
+        box-shadow: none;
+    } to {
+        box-shadow: 1px 10px 5px rgb(22, 22, 22);
+    }
+}
+
+
+/* ******************* LETTER STYLES ******************* */
+.letter-bg {
+    background-color: var(--xmas-green);
+}
+
+.letter-container {
+    width: 900px;
+    height: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color:rgb(248, 232, 234);
+    border-radius: 0 5px 0 0;
+}
+
+.letter-fold {
+    float: right;
+    margin-top: -40px;
+    margin-right: -20px;
+    width: 64px;
+    height: 64px;
+    background-color: rgb(240, 214, 217);
+    transition: all ease 0.5s;
+}
+
+.letter-fold:hover {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(245, 225, 227);
+}
+
+.fold-cover {
+    width: 100px;
+    height: 100px;
+    background-color: var(--xmas-green);
+    transform: rotate(45deg);
+    margin-top: -80px;
+    margin-left: 830px;
+}
+
+.letter-urgent {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.letter-container h3 {
+    margin: 70px;
+    text-align: center;
+    color: var(--xmas-blue);
+}
+
+.letter-section {
+    margin-bottom: 20px;
+}
+
+.letter-container p {
+    margin: 40px;
+    color: var(--xmas-blue);
+}
+
+.letter-from {
+    margin-left: 230px;
+}
+
+.signature {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
