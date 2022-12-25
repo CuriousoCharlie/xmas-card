@@ -4,7 +4,7 @@ const audio = new Audio("/assets/audio/Kentucky_fletcher.mp3");
 
 
 const viewLetter = () => {
-    window.location.href = "./letter.html";
+    window.location.href = "https://CuriousoCharlie.github.io/xmas-card/letter.html";
 };
 
 const playAud = () => {
