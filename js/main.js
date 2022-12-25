@@ -1,6 +1,6 @@
 const seal = document.querySelector(".seal");
 const folds = document.querySelectorAll(".envelope-fold");
-const audio = new Audio("/assets/audio/Kentucky_fletcher.mp3");
+const audio = new Audio("https://CuriousoCharlie.github.io/xmas-card/assets/audio/Kentucky_fletcher.mp3");
 
 
 const viewLetter = () => {
